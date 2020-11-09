@@ -30,29 +30,52 @@ cout << f[m] << endl;
 */
 
 
+const int n=3;
+const int m=200;
+int w[3]={50,100,150}; 
+int dp[n+1][m+1];
 
-// 参考deb of heap-buffer-overflow老哥的代码
-
-int w[4] = {0,150,100,50};
-int f[4][201];
-int n=3;
-int m=200;
 int main() {
-  for (int i=1; i<=n; ++i) {
-    for (int j=1; j<=m; ++j) {
-      f[i][j]=0;
+	for (int i=0; i<n+1; ++i) {
+		for (int j=0; j<m+1; ++j) {
+			dp[i][j] = 0;
+		} 
+	}	
+	for (int i=0; i<n+1; ++i) dp[i][0]=1;
+	for (int i=1; i<n+1; ++i) {
+		for (int j=1; j<m+1; ++j) {
+			dp[i][j] = 0;
+			for (int k=0; k<=j/w[i-1]; ++k) {
+				dp[i][j] += dp[i-1][j-k*w[i-1]];
+			}
+		}
+	}
+	cout << dp[n][m] << endl;
+	return 0;
+}
+
+
+
+
+#if 0
+
+int v[3] = {50,100,150};
+int f[200];
+int main() {
+  f[0] = 1;
+  for (int i=0; i<3; ++i) {
+    for (int j=v[i]; j<201; ++j) {
+      f[j] = f[j] + f[j-v[i]];
     }
   }
-  
-  for (int i=1; i<=n; ++i) {
-    f[i][0] = 1;// 当选择第i件商品时间并且j-w[i]正好等于0  这样的方案数是一种
-  }
-  for (int i=1; i<=n; ++i) {
-    for (int j=1; j<=m; ++j) {
-      if (j < w[i]) f[i][j] = f[i-1][j];
-      else f[i][j] = f[i-1][j] + f[i][j-w[i]];
-    }
-  }
-  cout << f[3][200] << endl;
+  cout << f[200] << endl;
   return 0;
 }
+#endif 
+
+
+
+
+
+
+
