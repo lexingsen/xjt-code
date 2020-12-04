@@ -64,7 +64,7 @@ public:
     }
     return data[top2];
   }
-
+              
 
   void pop_left() {
     if (top1==-1) {
