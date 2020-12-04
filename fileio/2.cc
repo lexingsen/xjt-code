@@ -1,7 +1,7 @@
 /*
  * @Description: 写一个比较两个文件的程序，打印出两个文件首次不同的行和字符的位置
- * @Language: 
- * @Author: 
+ * @Language: c++
+ * @Author: lexingsen
  * @Date: 2020-10-13 12:39:49
  */
 #include <bits/stdc++.h>

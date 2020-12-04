@@ -1,7 +1,7 @@
 /*
  * @Description: 复制文件，复制时把大写改为小写
- * @Language: 
- * @Author: 
+ * @Language: c++
+ * @Author: lexingsen
  * @Date: 2020-10-13 11:48:13
  */
 #include <bits/stdc++.h>
