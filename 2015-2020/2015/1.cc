@@ -1,5 +1,5 @@
 /*
- * @Description: 计算举证两条对角线元素之和
+ * @Description: 计算矩阵两条对角线元素之和
  * @Language: 
  * @Author: 
  * @Date: 2020-11-06 23:01:06
