@@ -1,7 +1,7 @@
 /*
- * @Description: 
- * @Language: 
- * @Author: 
+ * @Description: 给定一个整数m,统计其各个位上等于n的个数
+ * @Language: c++
+ * @Author: lexingsen
  * @Date: 2020-11-06 23:35:15
  */
 #include <bits/stdc++.h>

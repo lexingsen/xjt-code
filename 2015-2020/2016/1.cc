@@ -1,7 +1,7 @@
 /*
  * @Description: 去掉字符串中所有的数字字符
- * @Language: 
- * @Author: 
+ * @Language: C++
+ * @Author: lexingsen
  * @Date: 2020-11-06 23:35:15
  */
 #include <bits/stdc++.h>
