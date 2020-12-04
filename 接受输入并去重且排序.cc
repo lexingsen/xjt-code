@@ -1,4 +1,4 @@
-                                            /*
+/*
  * @Description: 从键盘输入是个整型数字 去掉重复的 将剩下从大到小排序 
  * @Language: 
  * @Author: 
