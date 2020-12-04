@@ -1,7 +1,7 @@
 /*
- * @Description: 
- * @Language: 
- * @Author: 
+ * @Description: 输入几名学生的姓名和成绩，要求分数相同时相对顺序输入时不变。进行排序后输出：
+ * @Language: C++
+ * @Author: lexingsen
  * @Date: 2020-11-06 20:59:51
  */
 #include <bits/stdc++.h>
@@ -26,7 +26,7 @@ int main() {
   for (int i=0; i<N; ++i) {
     cin >> stu[i].name >> stu[i].score;
   }
-  sort(stu, stu+N, cmp);
+  stable_sort(stu, stu+N, cmp);
   for (int i=0; i<N; ++i) {
     cout << stu[i].name << ":" << stu[i].score << endl;
   }

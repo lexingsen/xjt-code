@@ -1,7 +1,7 @@
 /*
- * @Description: 
- * @Language: 
- * @Author: 
+ * @Description: 输入年月日，计算改天是那年的第几天
+ * @Language: C++
+ * @Author: lexingsen
  * @Date: 2020-11-06 20:59:53
  */
 #include <bits/stdc++.h>
@@ -13,7 +13,7 @@ int month[2][13] = {
   {0,31,29,31,30,31,30,31,31,30,31,30,31}
 };
 
-
+// 判断是否为闰年
 bool isLeapYear(int yy) {
   return ((yy%4==0 && yy%100!=0) || (yy%400==0));
 }

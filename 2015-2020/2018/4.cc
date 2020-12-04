@@ -1,7 +1,7 @@
 /*
- * @Description: 
- * @Language: 
- * @Author: 
+ * @Description: n个相同的球，m相同的盒子，盒子允许空，求总的防止方法
+ * @Language: C++
+ * @Author: lexingsen
  * @Date: 2020-11-06 21:18:19
  */
 #include <bits/stdc++.h>

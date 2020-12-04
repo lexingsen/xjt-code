@@ -1,3 +1,9 @@
+/*
+ * @Description: 输入字符串，字符串以‘#’结尾，判断每个字符串中0-9数字各有多少个?
+ * @Language: C++
+ * @Author: lexingsen
+ * @Date: 2020-11-06 20:59:49
+ */
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -6,11 +12,7 @@ using namespace std;
 输入字符串，字符串以‘#’结尾，判断每个字符串中0-9数字各有多少个?
 */
 
-
 unordered_map<char, int> mp;
-
-
-
 int main() {
   freopen("in.txt", "r", stdin);
   string s;
