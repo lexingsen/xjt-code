@@ -1,7 +1,14 @@
+/*
+ * @Description: 
+ * @Language: 
+ * @Author: 
+ * @Date: 2020-11-06 13:43:35
+ */
 
 /*
 求逆序对的个数
 */
+// 时间复杂度O(nlgn)
 const int N=10010;
 int t[N]={0};
 int res = 0;
