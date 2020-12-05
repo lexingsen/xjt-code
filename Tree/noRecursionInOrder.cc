@@ -1,3 +1,9 @@
+/*
+ * @Description: 二叉树非递归中序遍历
+ * @Language: c++
+ * @Author: lexingsen
+ * @Date: 2020-11-16 08:14:16
+ */
 
 
 #include <bits/stdc++.h>

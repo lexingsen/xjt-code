@@ -1,7 +1,7 @@
 /*
- * @Description: 
- * @Language: 
- * @Author: 
+ * @Description: 非递归后序遍历
+ * @Language: c++
+ * @Author: lexingsen
  * @Date: 2020-11-16 08:14:27
  */
 #include <bits/stdc++.h>
